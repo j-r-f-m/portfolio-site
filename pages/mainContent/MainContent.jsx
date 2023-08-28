@@ -4,16 +4,21 @@ import Col from "react-bootstrap/Col";
 
 import { aboutMe } from "./MainContentText";
 
+// use border to make layout visible
+let borderStyle = "border border-danger";
+
 export function MainContent() {
   return (
     <>
       <Container>
         <Row>
-          <Col>Photo</Col>
-          <Col>{aboutMe}</Col>
+          <Col className="border border-danger d-flex justify-content-center align-items-center">
+            Photo
+          </Col>
+          <Col className={borderStyle}>{aboutMe}</Col>
         </Row>
-        <Row>Row 2</Row>
-        <Row>Row 3</Row>
+        <Row className={borderStyle}>Row 2</Row>
+        <Row className={borderStyle}>Row 3</Row>
       </Container>
     </>
   );
