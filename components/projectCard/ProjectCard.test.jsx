@@ -1,14 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { ProjectCard } from "./ProjectCard";
 
-import { Navigation } from "./Navigation";
-
-describe.skip("App component", () => {
+describe("App component", () => {
   it("renders navbar and corresponding links", () => {
-    render(<Navigation />);
+    render(<ProjectCard />);
 
-    expect(screen.getByRole("navigation").textContent).toMatch(/About/i);
-    expect(screen.getByRole("navigation").textContent).toMatch(/Projects/i);
-    expect(screen.getByRole("navigation").textContent).toMatch(/Contact/i);
+    expect(screen.getByRole("img"));
   });
 });
