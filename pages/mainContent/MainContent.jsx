@@ -1,8 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-import { aboutMe } from "./MainContentText";
+import { MainContentHero } from "./MainContenHero";
 
 // use border to make layout visible
 let borderStyle = "border border-danger";
@@ -10,14 +11,23 @@ let borderStyle = "border border-danger";
 export function MainContent() {
   return (
     <>
+      {/* organize the grid in */}
       <Container>
-        <Row>
-          <Col className="border border-danger d-flex justify-content-center align-items-center">
-            Photo
-          </Col>
-          <Col className={borderStyle}>{aboutMe}</Col>
+        <MainContentHero />
+        <Row className={borderStyle}>
+          {" "}
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </Row>
-        <Row className={borderStyle}>Row 2</Row>
         <Row className={borderStyle}>Row 3</Row>
       </Container>
     </>
