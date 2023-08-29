@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import { aboutMe } from "./MainContentText";
+import { aboutMe } from "../MainContentText";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
@@ -8,8 +8,8 @@ export function MainContentHero() {
   return (
     <>
       <Container>
-        <Row className="border border-danger ">
-          <h1 className="mb-10">About Me</h1>
+        <Row className="border border-danger mt-5 mb-2">
+          <h1>About Me</h1>
         </Row>
         <Row>
           <Col className="border border-danger d-flex flex-column justify-content-center  align-items-center">
