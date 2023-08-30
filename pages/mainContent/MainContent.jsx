@@ -1,5 +1,7 @@
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import { ProjectCard } from "../../components/projectCard/ProjectCard";
+import Col from "react-bootstrap/Col";
+
 import { MainContentHero } from "./mainContentHero/MainContenHero";
 import { MainContentProjects } from "./mainContentProjects/MainContentProjects";
 
@@ -14,12 +16,18 @@ export function MainContent() {
   return (
     <>
       <MainContentHero />
-      <MainContentProjects className="mb-2rem" />
-      <ProjectCard />
+      <MainContentProjects />
 
-      <Row className=" border-danger d-flex justify-content-center align-items-center">
-        Row 3
-      </Row>
+      <Container>
+        <Row className="mt-4">
+          <Col sm className="border border-danger">
+            Col1
+          </Col>
+          <Col sm className="border border-danger">
+            Col1
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

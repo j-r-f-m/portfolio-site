@@ -11,11 +11,17 @@ export function MainContentHero() {
         <Row className="border border-danger mt-5 mb-2">
           <h1>About Me</h1>
         </Row>
-        <Row>
-          <Col className="border border-danger d-flex flex-column justify-content-center  align-items-center">
+        <Row className="d-flex">
+          <Col
+            sm
+            className="border border-danger d-flex  justify-content-center  align-items-center"
+          >
             <Image src="images/test_img_sm.jpg" rounded fluid />
           </Col>
-          <Col className="border border-danger d-flex justify-content-center align-items-center">
+          <Col
+            sm
+            className="border border-danger d-flex justify-content-center align-items-center"
+          >
             <article> {aboutMe}</article>
           </Col>
         </Row>
