@@ -7,20 +7,20 @@ import Nav from "react-bootstrap/Nav";
 export function MainContentProjects() {
   return (
     <>
-      <Container>
-        <Row className="border border-danger mt-5">
-          <h1>Projects</h1>
+      <Container className="text-light mt-5">
+        <Row className="">
+          <h2>Projects</h2>
         </Row>
-        <Row className="border border-danger mt-2">
+        <Row className="">
           <Container>
             <Row>
-              <h2>Bemessungshilfe</h2>
+              <h3>Bemessungshilfe</h3>
             </Row>
             <Row>
-              <Col sm className="border border-danger">
-                <Image src="images/img_bemessungshilfen.png" fluid />
+              <Col sm>
+                <Image src="images/img_bemessungshilfen.png" fluid rounded />
               </Col>
-              <Col sm className="border border-danger">
+              <Col sm>
                 <h4>Description</h4>
                 <article className="mb-3">
                   A front end calculation tool for concrete construction. You

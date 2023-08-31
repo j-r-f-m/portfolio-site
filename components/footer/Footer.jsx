@@ -1,14 +1,15 @@
 import Container from "react-bootstrap/Container";
 
+import Navbar from "react-bootstrap/Navbar";
+
 export function Footer() {
   return (
     <>
-      <Container
-        className="border border-danger bg-dark text-white-50 mt-5  d-flex  justify-content-center  align-items-center"
-        fluid
-      >
-        Copyright
-      </Container>
+      <Navbar fixed="bottom" bg="dark" data-bs-theme="dark">
+        <Container className="d-flex justify-content-center ">
+          <div className="text-muted">Copyright</div>
+        </Container>
+      </Navbar>
     </>
   );
 }

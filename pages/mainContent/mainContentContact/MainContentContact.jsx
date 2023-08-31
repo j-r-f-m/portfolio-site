@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 
 export function MainContentContact() {
   return (
-    <Container className="mt-3">
+    <Container className="mt-5 pb-5 text-light">
       <Row>
         {" "}
         <h2>Contact</h2>
