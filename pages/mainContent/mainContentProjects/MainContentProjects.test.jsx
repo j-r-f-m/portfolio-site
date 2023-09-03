@@ -8,8 +8,10 @@ describe("MainContentProjects component", () => {
     render(<MainContentProjects />);
     screen.debug();
 
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
-      /Projects/i
-    );
+    // expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
+    //   /Projects/i
+    // );
+
+    expect(screen.getByRole("heading", { name: "Projects" }));
   });
 });

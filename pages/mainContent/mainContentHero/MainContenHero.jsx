@@ -7,7 +7,9 @@ import Row from "react-bootstrap/Row";
 export function MainContentHero() {
   return (
     <>
-      <Container className="mt-5 text-light">
+      {/* navigation anchor */}
+
+      <Container id="about-me" className=" pt-5 text-light">
         <Row className=" ">
           <h2>About Me</h2>
         </Row>

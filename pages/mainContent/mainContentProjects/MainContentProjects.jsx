@@ -3,13 +3,23 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
+import PropTypes from "prop-types";
 
-export function MainContentProjects() {
+/**
+ * Component that renders one Project. If the LinkRef gets passed as a prop you
+ * can linkt the navigation bar with first project.
+ * @param {object} props LinkRef pass string if you want to set the link for the
+ * first project
+ * @returns
+ */
+export function MainContentProjects(props) {
   return (
     <>
-      <Container className="text-light mt-5">
-        <Row className="">
-          <h2>Projects</h2>
+      <Container className="text-light ">
+        <Row>
+          <h2 id={props.LinkRef} className="pt-5">
+            Projects
+          </h2>
         </Row>
         <Row className="">
           <Container>
@@ -51,3 +61,7 @@ export function MainContentProjects() {
     </>
   );
 }
+
+MainContentProjects.propTypes = {
+  LinkRef: PropTypes.string,
+};

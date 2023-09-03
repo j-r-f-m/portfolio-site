@@ -14,6 +14,7 @@ export function MainContent() {
     <>
       <MainContentHero />
       <MainContentProjects />
+      <MainContentProjects LinkRef="projects" />
       <MainContentContact />
     </>
   );
