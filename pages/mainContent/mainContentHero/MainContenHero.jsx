@@ -24,6 +24,7 @@ export function MainContentHero() {
             <article> {aboutMe}</article>
           </Col>
         </Row>
+        <hr />
       </Container>
     </>
   );

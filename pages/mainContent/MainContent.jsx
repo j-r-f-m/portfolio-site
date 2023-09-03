@@ -13,8 +13,8 @@ export function MainContent() {
   return (
     <>
       <MainContentHero />
-      <MainContentProjects />
       <MainContentProjects LinkRef="projects" />
+
       <MainContentContact />
     </>
   );

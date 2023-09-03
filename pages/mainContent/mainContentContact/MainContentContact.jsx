@@ -11,6 +11,7 @@ export function MainContentContact() {
         <Row className="d-flex  justify-content-center  align-items-center">
           <div>moesch.jonas@protonmail.com</div>
         </Row>
+        <hr />
       </Container>
     </>
   );

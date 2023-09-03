@@ -57,6 +57,7 @@ export function MainContentProjects(props) {
             </Row>
           </Container>
         </Row>
+        <hr />
       </Container>
     </>
   );
