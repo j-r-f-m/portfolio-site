@@ -4,7 +4,14 @@ import Navbar from "react-bootstrap/Navbar";
 
 export function Navigation() {
   return (
-    <Navbar fixed="top" role="navigation" bg="dark" data-bs-theme="dark">
+    <Navbar
+      fixed="top"
+      role="navigation"
+      bg="dark"
+      data-bs-theme="dark"
+      // className="pb-2"
+      style={{ marginBottom: "65px" }}
+    >
       <Container>
         <Nav className="me-auto">
           <Nav.Link href="#about-me">About</Nav.Link>

@@ -16,10 +16,10 @@ export function MainContentProjects(props) {
   return (
     <>
       <Container className="text-light ">
+        <div id={props.LinkRef} style={{ height: "65px" }}></div>
         <Row>
-          <h2 id={props.LinkRef} className="pt-5">
-            Projects
-          </h2>
+          {/* <h2 id={props.LinkRef} className="pt-5"> */}
+          <h2>Projects</h2>
         </Row>
         <Row className="">
           <Container>
