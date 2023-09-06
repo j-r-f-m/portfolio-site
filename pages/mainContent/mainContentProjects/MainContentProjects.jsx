@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import PropTypes from "prop-types";
+import { Link } from "react-bootstrap-icons";
 
 /**
  * Component that renders one Project. If the LinkRef gets passed as a prop you
@@ -40,15 +41,14 @@ export function MainContentProjects(props) {
                 <h4>Used Technologies</h4>
                 <article>Javascript, React.js, Bootstrap, vite</article>
                 <Row xs="auto">
-                  <Col>
-                    {" "}
-                    <Nav.Link className="mt-2" href="">
+                  <Col className="d-flex justify-content-between align-items-center align-items-center">
+                    <Link style={{ marginRight: "0.3rem" }} className="" />
+                    <Nav.Link className="" href="">
                       Site
                     </Nav.Link>
                   </Col>
-                  <Col>
-                    {" "}
-                    <Nav.Link className="mt-2" href="">
+                  <Col className="d-flex justify-content-between align-items-center align-items-center">
+                    <Nav.Link className="" href="">
                       Code
                     </Nav.Link>
                   </Col>
