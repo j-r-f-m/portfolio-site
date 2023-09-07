@@ -48,6 +48,7 @@ export function MainContentProjects(props) {
                     </Nav.Link>
                   </Col>
                   <Col className="d-flex justify-content-between align-items-center align-items-center">
+                    <Link style={{ marginRight: "0.3rem" }} className="" />
                     <Nav.Link className="" href="">
                       Code
                     </Nav.Link>

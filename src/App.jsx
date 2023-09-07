@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // 👇 add class to body element
-    document.body.classList.add("bg-danger");
+    document.body.classList.add("bg-dark");
     // document.body.classList.add("pt-3");
 
     // 👇️ set style on body element

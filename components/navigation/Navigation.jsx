@@ -10,10 +10,11 @@ export function Navigation() {
       bg="dark"
       data-bs-theme="dark"
       // className="pb-2"
-      style={{ marginBottom: "65px" }}
+      // style={{ marginBottom: "65px" }}
     >
-      <Container>
-        <Nav className="me-auto">
+      <Container className="me-auto space-between">
+        <Navbar.Brand href="#home">- jm -</Navbar.Brand>
+        <Nav>
           <Nav.Link href="#about-me">About</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
