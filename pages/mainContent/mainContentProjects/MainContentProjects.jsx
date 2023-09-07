@@ -4,7 +4,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import PropTypes from "prop-types";
-import { Link } from "react-bootstrap-icons";
 
 /**
  * Component that renders one Project. If the LinkRef gets passed as a prop you
@@ -17,7 +16,7 @@ export function MainContentProjects(props) {
   return (
     <>
       <Container className="text-light ">
-        <div id={props.LinkRef} style={{ height: "65px" }}></div>
+        <div id={props.LinkRef}></div>
         <Row>
           {/* <h2 id={props.LinkRef} className="pt-5"> */}
           <h2>Projects</h2>
@@ -39,21 +38,31 @@ export function MainContentProjects(props) {
                   amount of rebars that can fit in a concrete beam.
                 </article>
                 <h4>Used Technologies</h4>
-                <article>Javascript, React.js, Bootstrap, vite</article>
-                <Row xs="auto">
-                  <Col className="d-flex justify-content-between align-items-center align-items-center">
-                    <Link style={{ marginRight: "0.3rem" }} className="" />
-                    <Nav.Link className="" href="">
-                      Site
+                <article className="mb-4">
+                  Javascript, React.js, Bootstrap, vite
+                </article>
+
+                <Nav variant="underline  ">
+                  <Nav.Item className="d-flex align-items-center">
+                    <Nav.Link
+                      className=" text-light"
+                      href=""
+                      style={{ padding: "1px" }}
+                    >
+                      <span>Site</span>
                     </Nav.Link>
-                  </Col>
-                  <Col className="d-flex justify-content-between align-items-center align-items-center">
-                    <Link style={{ marginRight: "0.3rem" }} className="" />
-                    <Nav.Link className="" href="">
+                  </Nav.Item>
+
+                  <Nav.Item>
+                    <Nav.Link
+                      className="text-light"
+                      href=""
+                      style={{ padding: "1px" }}
+                    >
                       Code
                     </Nav.Link>
-                  </Col>
-                </Row>
+                  </Nav.Item>
+                </Nav>
               </Col>
             </Row>
           </Container>

@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 export function Navigation() {
   return (
     <Navbar
+      activeKey="#about-me"
       fixed="top"
       role="navigation"
       bg="dark"
@@ -13,9 +14,11 @@ export function Navigation() {
       // style={{ marginBottom: "65px" }}
     >
       <Container className="me-auto space-between">
-        <Navbar.Brand href="#home">- jm -</Navbar.Brand>
+        <Navbar.Brand href="#">- jm -</Navbar.Brand>
         <Nav>
-          <Nav.Link href="#about-me">About</Nav.Link>
+          <Nav.Link eventKey="Link-1" href="#about-me">
+            About
+          </Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
