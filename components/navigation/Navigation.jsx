@@ -14,7 +14,7 @@ export function Navigation() {
       // style={{ marginBottom: "65px" }}
     >
       <Container className="me-auto space-between">
-        <Navbar.Brand href="#">- jm -</Navbar.Brand>
+        <Navbar.Brand href="#">Jonas Mösch</Navbar.Brand>
         <Nav>
           <Nav.Link eventKey="Link-1" href="#about-me">
             About
