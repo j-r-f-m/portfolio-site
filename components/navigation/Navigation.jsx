@@ -9,7 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 export function Navigation() {
   return (
     <Navbar
-      activeKey="#about-me"
+      activekey="#about-me"
       fixed="top"
       role="navigation"
       bg="dark"

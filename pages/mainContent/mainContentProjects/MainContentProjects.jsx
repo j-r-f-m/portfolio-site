@@ -3,6 +3,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PropTypes from "prop-types";
+import { MainContentProjectsDescription } from "./MainContentProjectsDescription";
 import { MainContentProjectsLinks } from "./MainContentProjectsLinks";
 
 /**
@@ -23,9 +24,7 @@ export function MainContentProjects(props) {
   return (
     <>
       <Container className="Projects-Container text-light">
-        {/* <div className="test" id={props.LinkRef}></div> */}
         <Row className="Heading-Row">
-          {/* <h2 id={props.LinkRef} className="pt-5"> */}
           <h2 id={props.LinkRef} style={{ paddingTop: "50px" }}>
             Projects
           </h2>
@@ -39,16 +38,7 @@ export function MainContentProjects(props) {
               <Image src="images/img_bemessungshilfen.png" fluid rounded />
             </Col>
             <Col sm>
-              <h4>Description</h4>
-              <article className="mb-3">
-                A front end calculation tool for concrete construction. You can
-                calculate the needed anchorage length of a rebar and the amount
-                of rebars that can fit in a concrete beam.
-              </article>
-              <h4>Used Technologies</h4>
-              <article className="mb-4">
-                Javascript, React.js, Bootstrap, vite
-              </article>
+              <MainContentProjectsDescription />
               <MainContentProjectsLinks />
             </Col>
           </Row>
