@@ -27,7 +27,7 @@ export function MainContentProjects(props) {
               <h3>Bemessungshilfe</h3>
             </Row>
             <Row>
-              <Col sm>
+              <Col sm className="mb-2">
                 <Image src="images/img_bemessungshilfen.png" fluid rounded />
               </Col>
               <Col sm>
@@ -49,7 +49,7 @@ export function MainContentProjects(props) {
                       href=""
                       style={{ padding: "1px" }}
                     >
-                      <span>Site</span>
+                      <span>Visit Site</span>
                     </Nav.Link>
                   </Nav.Item>
 
@@ -59,7 +59,7 @@ export function MainContentProjects(props) {
                       href=""
                       style={{ padding: "1px" }}
                     >
-                      Code
+                      View Code
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
