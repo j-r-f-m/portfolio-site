@@ -2,6 +2,10 @@ import Container from "react-bootstrap/Container";
 import { CCircle } from "react-bootstrap-icons";
 import Navbar from "react-bootstrap/Navbar";
 
+/**
+ * footer component
+ * @returns jsx
+ */
 export function Footer() {
   return (
     <>

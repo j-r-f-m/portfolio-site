@@ -2,6 +2,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+/**
+ * navigation comopent
+ * @returns jsx
+ */
 export function Navigation() {
   return (
     <Navbar
@@ -10,10 +14,8 @@ export function Navigation() {
       role="navigation"
       bg="dark"
       data-bs-theme="dark"
-      // className="pb-2"
-      // style={{ marginBottom: "65px" }}
     >
-      <Container className="me-auto space-between">
+      <Container>
         <Navbar.Brand href="#">Jonas Mösch</Navbar.Brand>
         <Nav>
           <Nav.Link eventKey="Link-1" href="#about-me">

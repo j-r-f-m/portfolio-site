@@ -10,19 +10,12 @@ export function MainContentHero() {
       <Container
         className=" text-light"
         id="about-me"
-        // style={{ paddingTop: "65px", paddingBottom: "65px" }}
         style={{ paddingTop: "65px" }}
       >
         <Row className=" ">
           <h2>About Me</h2>
         </Row>
         <Row className="d-flex">
-          {/* <Col
-            sm
-            className=" d-flex  justify-content-center  align-items-center"
-          >
-            <Image src="images/test_img_sm.jpg" rounded fluid />
-          </Col> */}
           <Col sm className=" d-flex justify-content-center align-items-center">
             <article> {aboutMe}</article>
           </Col>
