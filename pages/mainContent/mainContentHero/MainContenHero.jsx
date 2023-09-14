@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 // import Image from "react-bootstrap/Image";
-import { aboutMe } from "../MainContentText";
+import { aboutMeEng, aboutMeGer } from "../MainContentText";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
@@ -17,7 +17,7 @@ export function MainContentHero() {
         </Row>
         <Row className="d-flex">
           <Col sm className=" d-flex justify-content-center align-items-center">
-            <article> {aboutMe}</article>
+            <article> {aboutMeEng}</article>
           </Col>
         </Row>
         <hr />
