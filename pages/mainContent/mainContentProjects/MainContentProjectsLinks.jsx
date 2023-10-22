@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 export function MainContentProjectsLinks() {
   return (
     <>
-      <Nav variant="underline  ">
+      <Nav variant="underline">
         <Nav.Item className="d-flex align-items-center">
           <Nav.Link className=" text-light" href="" style={{ padding: "1px" }}>
             <span>Visit Site</span>

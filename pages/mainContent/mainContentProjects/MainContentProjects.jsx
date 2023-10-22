@@ -25,7 +25,7 @@ export function MainContentProjects(props) {
     <>
       <Container className="Projects-Container text-light">
         <Row className="Heading-Row">
-          <h2 id={props.LinkRef} style={{ paddingTop: "50px" }}>
+          <h2 id={props.LinkRef} style={{ paddingTop: "55px" }}>
             Projects
           </h2>
         </Row>

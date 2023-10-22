@@ -8,7 +8,7 @@ export function MainContentHero() {
   return (
     <>
       <Container
-        className=" text-light"
+        className="xs text-light p-6"
         id="about-me"
         style={{ paddingTop: "65px" }}
       >
