@@ -29,6 +29,22 @@ export function MainContentProjects(props) {
             Projects
           </h2>
         </Row>
+
+        <Row className="Body-Row mb-5">
+          <Row>
+            <h3>Shopping Cart</h3>
+          </Row>
+          <Row>
+            <Col sm className="mb-2">
+              <Image src="images/img_shopping.png" fluid rounded />
+            </Col>
+            <Col sm>
+              <MainContentProjectsDescription />
+              <MainContentProjectsLinks />
+            </Col>
+          </Row>
+        </Row>
+
         <Row className="Body-Row">
           <Row>
             <h3>Bemessungshilfe</h3>
@@ -43,6 +59,7 @@ export function MainContentProjects(props) {
             </Col>
           </Row>
         </Row>
+
         <hr />
       </Container>
     </>
